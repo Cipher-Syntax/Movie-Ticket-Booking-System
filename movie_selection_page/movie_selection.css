@@ -404,15 +404,12 @@ footer{
         height: 250px;
         background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
     }
-    .hero-container{
-        width: 90vw;
-    }
     .overlay_text1{
-        font-size: 30px;
+        font-size: 24px;
         text-align: center;
     }
     .overlay_text2{
-        font-size: 18px;
+        font-size: 14px;
         text-align: center;
         padding-bottom: 10px;
     }
