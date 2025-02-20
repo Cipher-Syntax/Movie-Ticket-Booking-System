@@ -405,13 +405,11 @@ footer{
         background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
     }
     .overlay_text1{
-        font-size: 24px;
-        text-align: center;
+        font-size: 22px;
     }
     .overlay_text2{
-        font-size: 10px;
-        text-align: center;
-        padding-bottom: 10px;
+        font-size: 11px;
+        padding-bottom: 20px;
     }
     #hero-btn{
         width: 250px;
