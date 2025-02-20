@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details Page</title>
+
+    <link rel="stylesheet" href="movie_selection.css" />
+    <script src="movie_selection.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>NoirÉclipse</h1>
+        </div>
+
+        <form action="#" class="search-box">
+            <input type="text" name="search" placeholder="Search movies here..." class="search-input" required />
+            <button type="submit">
+                <i class='bx bx-search' ></i>
+            </button>
+        </form>
+
+        <div class="user-profile">
+            <i class="fa fa-bell"></i>
+            <i class="far fa-user-circle"></i>
+        </div>
+
+    </header>
+
+    <div class="hero_section">
+        <div class="hero-img">
+            <!-- Hero section image goes here -->
+            <div class="image_container">
+                <div class="hero-container">
+                    <p class="overlay_text1">"Your epic movie adventure starts here"</p>
+                    <p class="overlay_text2">“Secure your tickets for the hottest new releases and special screenings!!”</p>
+                    <button type="submit" id="hero-btn" onclick="scrollToNowShowing()">Book Now</button>
+                </div>
+            </div>
+         </div>
+    </div>
+    
+    <center>
+        <div class="movies-showing" id="js-now-showing">
+<!--             
+            <script>
+                function scrollToNowShowing() {
+                    document.getElementById("now-showing").scrollIntoView({ behavior: "smooth" });
+                }
+            </script> -->
+            
+            <div class="movie-labels">
+                <h3 class="movie-label">Now Showing</h3>
+            </div>
+            <div class="horizontal-scrolling">
+                <div class="movie-container">
+                    <!-- movie container 1 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie1.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Moana 2</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 2 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie2.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Kung Fu Panda 4</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 3 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie3.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Avengers: Endgame</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 4 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie4.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Batman</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 5 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie5.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Hancock</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 6 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie6.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Rise Of The Planet Of The Apes</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="movies-showing">
+            <div class="movie-labels">
+                <h3 class="movie-text">Popular Movies</h3>
+            </div>
+            <div class="horizontal-scrolling">
+                <div class="movie-container">
+                    <!-- movie container 1 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie7.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Guardians of the Galaxy</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 2 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie8.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">The Shawshank Redemption</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 3 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie9.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Suicide Squad</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 4 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie10.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Bad Sister</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 5 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie11.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Mufasa</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                    <!-- movie 6 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie12.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Mulan</h3>
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="movies-showing">
+            <div class="movie-labels">
+                <h3 class="movie-text">Coming Soon</h3>
+            </div>
+            <div class="horizontal-scrolling">
+                <div class="movie-container">
+                    <!-- movie container 1 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie13.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 id="movie-title">Wrong Turn</h3>
+                        </div>
+                    </div>
+                    <!-- movie 2 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie14.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Insidious 1</h3>
+                        </div>
+                    </div>
+                    <!-- movie 3 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie15.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Insidious 2</h3>
+                        </div>
+                    </div>
+                    <!-- movie 4 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie16.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">The Godfather 2</h3>
+                        </div>
+                    </div>
+                    <!-- movie 5 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie17.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Fight Club</h3>
+                        </div>
+                    </div>
+                    <!-- movie 6 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie18.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Goodfellas</h3>
+                        </div>
+                    </div>
+                    <!-- movie 7 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie19.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">After</h3>
+                        </div>
+                    </div>
+                    <!-- movie 8 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie20.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">John Wick</h3>
+                        </div>
+                    </div>
+                    <!-- movie 9 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie21.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Freedom</h3>
+                        </div>
+                    </div>
+                    <!-- movie 10 -->
+                    <div class="movies">
+                        <div class="background-container">
+                            <div class="image-container">
+                                <img src="/images/movie22.jpg" width="200px" height="250px" />
+                            </div>
+                            <h3 class="movie-title">Transformers</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <footer>
+        <div class="footer-logo">
+            <h1>NoirÉclipse</h1>
+        </div>
+
+        <div class="contact-info">
+            <a href="#" id="about">About Us | </a>
+            <a href="#" id="contact">Contact Us</a>
+        </div>
+
+        <div class="categories">
+            <a href="#" id="now-movie">Now Showing | </a>
+            <a href="#" id="pop-movie">Popular Movies | </a>
+            <a href="#" id="coming-movie">Coming Soon</a>
+        </div>
+    </footer>
+
+</body>
+</html>

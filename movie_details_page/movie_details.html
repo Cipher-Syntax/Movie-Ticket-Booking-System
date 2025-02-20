@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details Page</title>
+    <link rel="stylesheet" href="movie_details.css"/>
+    <script src="movie_details.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="left-right-arrow">
+            <!-- left arrow -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4606 14H14.9142L19.4571 9.45711L18.0429 8.04289L11.7929 14.2929L11.0858 15L11.7929 15.7071L18.0429 21.9571L19.4571 20.5429L14.9142 16H27.4606C26.9511 22.436 21.567 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.567 2.5 26.9511 7.564 27.4606 14Z" fill="white"/>
+            </svg>
+    
+            <!-- right arrow -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0001 27.5C21.9037 27.5 27.5001 21.9036 27.5001 15C27.5001 8.09644 21.9037 2.5 15.0001 2.5C8.43318 2.5 3.04899 7.564 2.53955 14H15.0859L10.543 9.45711L11.9572 8.04289L18.2072 14.2929L18.9143 15L18.2072 15.7071L11.9572 21.9571L10.543 20.5429L15.0859 16H2.53955C3.04899 22.436 8.43318 27.5 15.0001 27.5Z" fill="white"/>
+              </svg>
+        </div>
+        
+        <hr/>
+
+        <div class="logo">
+            <h1>NoirÉclipse</h1>
+        </div>
+
+        <div class="user-profile">
+            <i class="fa fa-bell"></i>
+            <i class="far fa-user-circle"></i>
+        </div>
+    </header>
+
+    <div class="details-container">
+        <div class="left-side">
+            <div class="img-box">
+                <center>
+                    <img src="/images/shawshank.jpg" alt="movie-image" />
+                </center>
+            </div>
+
+            <div class="text-details">
+                <h2>The Shawshank Redemption</h2>
+            </div>
+
+            <div class="genre">
+                <p>Genre: Prison, Drama, Thriller</p>
+            </div>
+
+            <div class="duration">
+                <p>Duration: 2h & 22m</p>
+            </div>
+
+            <div class="synopsis">
+                <h2>Synopsis</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<span id="dots">...</span>
+                    
+                    <span id="more" class="hidden-content"> 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </span>
+                    
+                    <span id="toggleBtn" class="see-more" onclick="toggleText()">See More</span>
+                </p>
+                <div class="time-container">
+                    <h2 id="movie-schedule">Select Date and Time</h2>
+                    <div class="time-options">
+                        <div class="time">10:00</div>
+                        <div class="time">13:00</div>
+                        <div class="time">15:00</div>
+                        <div class="time">18:00</div>
+                    </div>
+            
+                    <div class="date-options">
+                        <div class="date">Mon <br/>10</div>
+                        <div class="date">Tue <br/>11</div>
+                        <div class="date">Wed <br/>12</div>
+                        <div class="date">Thu <br/>13</div>
+                        <div class="date">Fri <br/>14</div>
+                    </div>
+
+                    <form action="#" method="post">
+                        <input type="submit" name="button" id="bookTicket-btn" value="Book Ticket" />
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+            
+
+        <div class="right-side">
+            <div class="right-container">
+                <div class="cast-crew">
+                    <h2 id="cast">Cast & Crew:</h2>
+                    <p>
+                        <li>Tim Robbins as Andy Dufresne</li>
+                        <li>Morgan Freeman as Ellis Boyd "Red" Redding, Andy's best friend and the film's narrator; convicted of murder in 1927. Before Freeman was cast, Clint Eastwood, Harrison Ford, Paul Newman, and Robert Redford were each considered for the role. Although written as a middle-aged Irishman with greying red hair (as in the novella), Darabont cast Freeman for his authoritative presence and demeanor; he could not see anyone else as Red. The short dialogue with Andy is a jest towards this casting decision as Red — when asked about the origin of his nickname — answers "Maybe it's because I'm Irish."</li>
+                        <li>Gunton as Warden Samuel Norton. He is well versed in the Bible and presents himself as a pious, devout Christian and reform-minded administrator, while his actions reveal him to be corrupt, ruthless, and remorseless.</li> 
+                        <li>William Sadler as Heywood, a member of Red's gang of long-serving convicts.</li>
+                        <li>Clancy Brown as Capt. Byron Hadley, chief of the prison guards, Hadley is a sadistic guard who thinks nothing of humiliation and violence towards inmates to keep them in line. When cast for the role, Brown declined the offer to study real-life prison guards as preparation for his role, because he did not want to base it on any particular person.</li>
+                        <li>Gil Bellows as Tommy Williams, a young convict whose experiences in a previous prison hold the truth about Andy's innocence.</li>
+                        <li>Mark Rolston as Bogs Diamond, the head of "The Sisters" gang and a prison rapist.</li>
+                        <li>James Whitmore as Brooks Hatlen, prison librarian/trustee and one of the oldest convicts at Shawshank, having been imprisoned there since 1905. Darabont cast Whitmore because he was one of his favorite character actors.</li>
+                        <li>Jeffrey DeMunn as the prosecuting attorney in Andy Dufresne's trial.</li>
+                    </p>
+
+                    <!-- <div class="rating">
+                        <h2 id="rate">Rating:</h2>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div> -->
+
+                    <div class="rating">
+                        <h2 id="rate">Rating:</h2>
+                        <img src="/images/rating.png" alt="rating" />
+                    </div>
+
+                    <textarea id="comment-bar" cols="400px" placeholder="Add Comment"></textarea>
+
+                    <form action="#" method="post">
+                        <input type="submit" id="submit" name="submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <h1>NoirÉclipse</h1>
+        </div>
+
+        <div class="contact-info">
+            <a href="#" id="about">About Us | </a>
+            <a href="#" id="contact">Contact Us</a>
+        </div>
+
+        <div class="categories">
+            <a href="#" id="now-movie">Now Showing | </a>
+            <a href="#" id="pop-movie">Popular Movies | </a>
+            <a href="#" id="coming-movie">Coming Soon</a>
+        </div>
+    </footer>
+</body>
+</html>

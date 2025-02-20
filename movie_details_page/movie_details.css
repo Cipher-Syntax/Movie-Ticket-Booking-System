@@ -1,0 +1,230 @@
+*{
+    width: 100%;
+    margin: 0;
+}
+body{
+    font-family: Poppins;
+    background-color: #190F53;
+    color: #fff;
+    margin: 0;
+}
+header{
+    font-family: Poppins;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(64, 37, 145));
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.left-right-arrow{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    gap: 10px;
+}
+header hr{
+    width: 1px;
+    height: 58px;
+    background-color: white;
+    margin-left: 10px;
+}
+.logo h1{
+    padding-left: 25px;
+}
+.user-profile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    gap: 15px;
+    padding-right: 25px;
+}
+.details-container{
+    display: flex;
+    height: 100%;
+}
+.left-side{
+    max-width: 69%;
+}
+.img-box{
+    width: 22vw;
+    height: 71vh;
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    padding: 10px;
+    border-radius: 20px;
+    margin: 50px;
+}
+.img-box img{
+    height: 70vh;
+    width: 21vw;
+    border-radius: 15px;
+}
+.text-details{
+    position: absolute;
+    top: 22vh;
+    padding-left: 28vw;
+    max-width: fit-content;
+}
+.genre{
+    position: absolute;
+    padding-left: 28vw;
+    max-width: fit-content;
+    top: 30vh;
+    font-size: 14px;
+}
+.duration{
+    position: absolute;
+    padding-left: 48vw;
+    max-width: fit-content;
+    top: 30vh;
+    font-size: 14px;
+}
+.synopsis{
+    max-width: 450px;
+    text-align: justify;
+    position: absolute;
+    padding-left: 28vw;
+    top: 37vh;
+    font-size: 14px;
+}
+.hidden-content {
+    display: none;
+}
+.show {
+    display: inline;
+}
+.see-more {
+    font-weight: bold;
+    color: #B6116B;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#movie-schedule{
+    font-size: 16px;
+    position: absolute;
+    top: 30vh;
+    padding-left: 10vw;
+    max-width: fit-content;
+}
+.time-options{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.time{
+    margin-top: 20vh;
+    padding: 5px 15px;
+    background-color: #141450;
+    background-color: linear-gradient(180deg, #2E1371, #130B2B);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-top: 2px solid #09FBD3;
+    max-width: fit-content;
+}
+.date-options{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.date{
+    padding: 5px 15px;
+    background-color: #141450;
+    background-color: linear-gradient(180deg, #2E1371, #130B2B);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-top: 2px solid #09FBD3;
+    max-width: fit-content;
+}
+.time:hover, .date:hover {
+    background-color: #1e1e66;
+}
+.time.selected, .date.selected{
+    background-color: #B6116B;
+}
+#bookTicket-btn{
+    margin-top: 10px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20vw;
+    background-color: #B6116B;
+    position: absolute;
+    left: 40vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.right-side{
+    max-width: 28.7%;
+}
+.right-container{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 15px;
+}
+#casts{
+    font-size: 20px;  
+}
+.cast-crew{
+    text-align: justify;
+    font-size: 10px; 
+}
+#rate{
+    margin-top: 20px;
+    font-size: 16px;
+}
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    height: 100px
+}
+#submit{
+    border-radius: 10px;
+    width: 150px;
+    padding: 5px;
+}
+footer{
+    font-family: Poppins;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(64, 37, 145));
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 23%;
+
+}
+.footer-logo{
+    max-width: 33%;
+    width: fit-content;
+    margin-left: 30px;
+
+}
+.contact-info{
+    max-width: 33%;
+    width: fit-content;
+    margin-left: 5%;
+}
+.categories{
+    max-width: 33%;
+    width: fit-content;
+    margin-right: 3%;
+}
+.footer-logo h1{
+    padding-left: 15px;
+}
+.contact-info a, .categories a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
