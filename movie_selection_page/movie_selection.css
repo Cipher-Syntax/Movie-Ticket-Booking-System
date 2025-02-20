@@ -64,7 +64,8 @@ header{
 }
 .hero_section{
     background-image: url(/Movie-Ticket-Booking-System/images/hero_section.png);
-    background-size: cover;
+    /* background-size: cover; */
+    object-fit: cover;
 }
 .hero-img{
     width: 100%;
@@ -263,6 +264,9 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
+    #hero-btn{
+        width: 250px;
+    }
 }
 
 
@@ -279,16 +283,6 @@ footer{
     }
     .movies-showing{
         padding: 0px 2%;
-    }
-    .overlay_text1{
-        text-align: center;
-        font-size: 34px;
-        padding-bottom: 20px;
-    }
-    .overlay_text2{
-        text-align: center;
-        font-size: 20px;
-        padding-bottom: 20px;
     }
     footer{
         height: 150px;
@@ -385,13 +379,14 @@ footer{
         border: none;
         outline: none;
         color: white;
+        font-size: 10px;
     }
     .search-box button{
         background-color: transparent;
         color: white;
         border: none;
         outline: none;
-        font-size: 18px;
+        font-size: 16px;
         width: fit-content;
         cursor: pointer;
         margin-top: 5px;
@@ -401,33 +396,27 @@ footer{
     }
     .hero_section{
         background-image: url(/Movie-Ticket-Booking-System/images/hero_section.png);
-        background-size: cover;
+        /* background-size: cover; */
+        object-fit: cover;
     }
     .hero-img{
         width: 100%;
-        height: 50vh;
+        height: 250px;
         background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
     }
     .hero-container{
         width: 90vw;
     }
     .overlay_text1{
-        padding-top: 4vh;
         font-size: 30px;
-        padding-left: 2vw;
+        text-align: center;
     }
     .overlay_text2{
         font-size: 18px;
-        padding-left: 2vw;
+        text-align: center;
+        padding-bottom: 10px;
     }
-    /* #hero-btn{
-        width: 16vw;
-        padding: 10px;
-        background-color: #B6116B;
-        border-radius: 10px;
-        cursor: pointer;
-        color: white;
-        border: none;
-        margin: 1vw 2vw 1vw 2vw;
-    } */
+    #hero-btn{
+        width: 250px;
+    }
 }
