@@ -197,6 +197,15 @@ body{
         max-width: 350px;
         margin-top: 0px;
     }
+    #left-noir{
+        margin: 20%;
+        font-size: 40px;
+        color: white;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
     #left-paragraph{
         font-size: 12px;
     }
