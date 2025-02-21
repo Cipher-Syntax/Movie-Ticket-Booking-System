@@ -204,7 +204,7 @@ body{
         font-size: 40px;
         color: white;
         max-width: fit-content;
-        margin-left: auto;
+        margin-left: 150px;
         margin-right: auto;
         margin-bottom: 0;
     }
@@ -212,8 +212,7 @@ body{
         font-size: 11px;
         margin-bottom: 20%;
         width: fit-content;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 100px;
 
     }
     .right-side{
