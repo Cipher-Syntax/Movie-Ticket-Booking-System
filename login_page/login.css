@@ -203,7 +203,7 @@ body{
         font-size: 40px;
         color: white;
         max-width: fit-content;
-        margin-left: auto;
+        margin-left: 45px;
         margin-right: auto;
         margin-bottom: 0;
     }
@@ -212,7 +212,7 @@ body{
         margin-bottom: 20%;
         max-width: fit-content;
         margin-left: auto;
-        margin-right: 50px;
+        margin-right: 45px;
     }
     .right-side{
         width: 100%;
@@ -232,7 +232,6 @@ body{
     }
     .admin_access{
         max-width: fit-content;
-        padding-bottom: 15px;
         font-size: 15px;
     }
 
