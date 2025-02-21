@@ -210,9 +210,9 @@ body{
     #left-paragraph{
         font-size: 11px;
         margin-bottom: 20%;
-        max-width: fit-content;
-        margin-left: auto;
-        margin-right: 49px;
+        width: fit-content;
+        margin-right: 70px;
+
     }
     .right-side{
         width: 100%;
