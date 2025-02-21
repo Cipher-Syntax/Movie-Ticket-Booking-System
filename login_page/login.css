@@ -106,6 +106,7 @@ body{
     margin-right: 5em;
     font-size: 10px;
     color: White;
+    font-weight: bold;
 }
 #create:hover{
     text-decoration: underline;
@@ -121,4 +122,51 @@ body{
 .admin_access a{
     text-decoration: none;
     color: gold;
+}
+
+@media (max-width: 720px){
+    .container{
+        display: inline-block;
+        width: 350px; 
+        height: max-content;
+        margin-left: 15%;
+    }
+    .left-side{
+        width: 350px;
+        border-radius: 0;
+        padding-top: 5px;
+        border-radius: 30px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    #left-noir{
+        margin-top: 30%;
+        font-size: 30px;
+        color: white;
+    }
+    #left-paragraph{
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+    /* .left-side p{
+        font-size: 10px;
+    } */
+    .right-side{
+        width: 250px;
+        padding: 50px;
+    }
+    .left-side h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .right-side button{
+        width: 150px;
+    }
+    .links{
+        font-size: 8px;
+    }
+    .links a{
+        font-size: 8px;
+        font-weight: bold;
+    }
 }
